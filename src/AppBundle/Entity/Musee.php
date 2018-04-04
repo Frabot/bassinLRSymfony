@@ -13,30 +13,129 @@ use Doctrine\ORM\Mapping as ORM;
 class Musee
 {
     /**
+     * @var int
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue
      */
-    protected $id;
-    /**
-     * @ORM\Column(type="string")
-     */
-    protected $nom;
+    private $id;
 
     /**
+     * @var string
+     *
      * @ORM\Column(type="string")
      */
-    protected $adresse;
+    private $nom;
 
     /**
+     * @var string
+     *
      * @ORM\Column(type="string")
      */
-    protected $accessibilite;
+    private$adresse;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(type="boolean")
+     */
+    private $accessibilite;
 
 
     /**
      * @ORM\OneToMany(targetEntity="Bateau", mappedBy="musee")
      * @var Bateaux []
      */
-    protected $bateaux;
+    private $bateaux;
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param string $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAdresse()
+    {
+        return $this->adresse;
+    }
+
+    /**
+     * @param string $adresse
+     */
+    public function setAdresse($adresse)
+    {
+        $this->adresse = $adresse;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAccessibilite()
+    {
+        return $this->accessibilite;
+    }
+
+    /**
+     * @param bool $accessibilite
+     */
+    public function setAccessibilite($accessibilite)
+    {
+        $this->accessibilite = $accessibilite;
+    }
+
+
+
+    /**
+     * Musee constructor.
+     */
+    public function __construct()
+    {
+        $this->bateaux = new ArrayCollection();
+    }
+
+    /**
+     * @return Bateaux[]
+     */
+    public function getBateaux()
+    {
+        return $this->bateaux;
+    }
+
+    /**
+     * @param Bateaux[] $bateaux
+     */
+    public function setBateaux($bateaux)
+    {
+        $this->bateaux = $bateaux;
+    }
+
 }

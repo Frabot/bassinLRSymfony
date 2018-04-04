@@ -11,11 +11,12 @@ namespace AppBundle\Controller;
 use AppBundle\Entity\Musee;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use FOS\RestBundle\Controller\Annotations as Rest;
 
 class MuseeController
 {
     /**
-     * @Rest\View(statusCode=Response::HTTP_CREATED, serializerGroups={"musee"})
+     * @Rest\View(serializerGroups={"musee"})
      * @Rest\Get("/musee")
      */
     public function getMuseeAction(Request $request)
