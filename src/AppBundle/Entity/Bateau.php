@@ -63,10 +63,10 @@ class Bateau
     private $musee;
 
     /**
-     * @ORM\OneToMany(targetEntity="Temoignage", mappedBy="bateau")
-     * @var Temoignages []
+     * @ORM\OneToMany(targetEntity="Temoin", mappedBy="bateau")
+     * @var Temoins []
      */
-    private $temoignages;
+    private $temoins;
 
     /**
      * @return int
@@ -208,24 +208,24 @@ class Bateau
      */
     public function __construct()
     {
-        $this->temoignages = new ArrayCollection();
+        $this->temoins = new ArrayCollection();
     }
 
 
     /**
-     * @return Temoignages[]
+     * @return Temoins[]
      */
-    public function getTemoignages()
+    public function getTemoins()
     {
-        return $this->temoignages;
+        return $this->temoins;
     }
 
     /**
-     * @param Temoignages[] $temoignages
+     * @param Temoins[] $temoins
      */
-    public function setTemoignages($temoignages)
+    public function setTemoins($temoins)
     {
-        $this->temoignages = $temoignages;
+        $this->temoins = $temoins;
     }
 }
 

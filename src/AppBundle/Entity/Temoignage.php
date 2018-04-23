@@ -25,15 +25,6 @@ class Temoignage
     /**
      *  @var string
      *
-     * @ORM\Column(type="string", nullable=false)
-     */
-    private $nom_auteur;
-
-
-
-    /**
-     *  @var string
-     *
      * @ORM\Column(type="string",nullable=false)
      */
     private $titre;
@@ -57,10 +48,10 @@ class Temoignage
     private $commentaire;
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Bateau")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Temoin")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $bateau;
+    private $temoin;
 
     /**
      * @return int
@@ -76,22 +67,6 @@ class Temoignage
     public function setId($id)
     {
         $this->id = $id;
-    }
-
-    /**
-     * @return string
-     */
-    public function getNomAuteur()
-    {
-        return $this->nom_auteur;
-    }
-
-    /**
-     * @param string $nom_auteur
-     */
-    public function setNomAuteur($nom_auteur)
-    {
-        $this->nom_auteur = $nom_auteur;
     }
 
     /**
@@ -131,17 +106,17 @@ class Temoignage
     /**
      * @return mixed
      */
-    public function getBateau()
+    public function getTemoin()
     {
-        return $this->bateau;
+        return $this->temoin;
     }
 
     /**
-     * @param mixed $bateau
+     * @param mixed $temoin
      */
-    public function setBateau($bateau)
+    public function setTemoin($temoin)
     {
-        $this->bateau = $bateau;
+        $this->temoin = $temoin;
     }
 
     /**

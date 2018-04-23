@@ -26,4 +26,16 @@ class MuseeController
 
         return $musee;
     }
+
+    /**
+     * @Rest\View(serializerGroups={"musee"})
+     * @Rest\Get("/musee/id/bateau")
+     */
+    public function getMusee(Request $request)
+    {
+        $musee = $this->get('doctrine.orm.entity_manager')
+            ->getRepository('AppBundle:Musee');
+
+        return $musee;
+    }
 }

@@ -35,13 +35,6 @@ class Musee
     private$adresse;
 
     /**
-     * @var boolean
-     *
-     * @ORM\Column(type="boolean")
-     */
-    private $accessibilite;
-
-    /**
      * @var integer
      *
      * @ORM\Column(type="integer")
@@ -108,22 +101,6 @@ class Musee
     public function setAdresse($adresse)
     {
         $this->adresse = $adresse;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isAccessibilite()
-    {
-        return $this->accessibilite;
-    }
-
-    /**
-     * @param bool $accessibilite
-     */
-    public function setAccessibilite($accessibilite)
-    {
-        $this->accessibilite = $accessibilite;
     }
 
     /**
