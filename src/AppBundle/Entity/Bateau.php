@@ -24,21 +24,21 @@ class Bateau
     /**
      *  @var string
      *
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=false)
      */
     private $nom;
 
     /**
      *  @var string
      *
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=false)
      */
     private $anneecreation;
 
     /**
      *  @var string
      *
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="text", nullable=false)
      */
     private $histoire;
 

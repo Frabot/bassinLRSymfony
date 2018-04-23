@@ -25,7 +25,7 @@ class Temoignage
     /**
      *  @var string
      *
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=false)
      */
     private $nom_auteur;
 
@@ -34,7 +34,7 @@ class Temoignage
     /**
      *  @var string
      *
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string",nullable=false)
      */
     private $titre;
 
@@ -43,7 +43,7 @@ class Temoignage
     /**
      * @var string
      *
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=true)
      */
 
     private $photo_temoignage;
@@ -51,7 +51,7 @@ class Temoignage
     /**
      * @var string
      *
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="text", nullable=false)
      */
 
     private $commentaire;
@@ -125,6 +125,8 @@ class Temoignage
     {
         $this->commentaire = $commentaire;
     }
+
+
 
     /**
      * @return mixed
