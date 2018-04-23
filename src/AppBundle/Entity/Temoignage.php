@@ -25,45 +25,33 @@ class Temoignage
     /**
      *  @var string
      *
-     * @ORM\Column(name="nomauteur",type="string")
+     * @ORM\Column(type="string")
      */
     private $nom_auteur;
 
-    /**
-     * @return string
-     */
-    public function getTitre()
-    {
-        return $this->titre;
-    }
 
-    /**
-     * @param string $titre
-     */
-    public function setTitre($titre)
-    {
-        $this->titre = $titre;
-    }
 
     /**
      *  @var string
      *
-     * @ORM\Column(name="titre",type="string")
+     * @ORM\Column(type="string")
      */
     private $titre;
 
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="date", type="datetime")
-     */
 
-    private $date;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="commentaire", type="datetime")
+     * @ORM\Column(type="string")
+     */
+
+    private $photo_temoignage;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(type="string")
      */
 
     private $commentaire;
@@ -107,19 +95,19 @@ class Temoignage
     }
 
     /**
-     * @return \DateTime
+     * @return string
      */
-    public function getDate()
+    public function getTitre()
     {
-        return $this->date;
+        return $this->titre;
     }
 
     /**
-     * @param \DateTime $date
+     * @param string $titre
      */
-    public function setDate($date)
+    public function setTitre($titre)
     {
-        $this->date = $date;
+        $this->titre = $titre;
     }
 
     /**
@@ -154,6 +142,20 @@ class Temoignage
         $this->bateau = $bateau;
     }
 
+    /**
+     * @return string
+     */
+    public function getPhotoTemoignage()
+    {
+        return $this->photo_temoignage;
+    }
 
+    /**
+     * @param string $photo_temoignage
+     */
+    public function setPhotoTemoignage($photo_temoignage)
+    {
+        $this->photo_temoignage = $photo_temoignage;
+    }
 
 }

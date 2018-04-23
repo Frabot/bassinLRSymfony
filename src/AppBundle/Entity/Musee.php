@@ -41,6 +41,20 @@ class Musee
      */
     private $accessibilite;
 
+    /**
+     * @var integer
+     *
+     * @ORM\Column(type="integer")
+     */
+    private $horaireOuverture;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(type="integer")
+     */
+    private $horaireFermeture;
+
 
     /**
      * @ORM\OneToMany(targetEntity="Bateau", mappedBy="musee")
@@ -112,7 +126,37 @@ class Musee
         $this->accessibilite = $accessibilite;
     }
 
+    /**
+     * @return int
+     */
+    public function getHoraireOuverture()
+    {
+        return $this->horaireOuverture;
+    }
 
+    /**
+     * @param int $horaireOuverture
+     */
+    public function setHoraireOuverture($horaireOuverture)
+    {
+        $this->horaireOuverture = $horaireOuverture;
+    }
+
+    /**
+     * @return int
+     */
+    public function getHoraireFermeture()
+    {
+        return $this->horaireFermeture;
+    }
+
+    /**
+     * @param int $horaireFermeture
+     */
+    public function setHoraireFermeture($horaireFermeture)
+    {
+        $this->horaireFermeture = $horaireFermeture;
+    }
 
     /**
      * Musee constructor.

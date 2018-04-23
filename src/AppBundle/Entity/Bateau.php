@@ -43,6 +43,20 @@ class Bateau
     private $histoire;
 
     /**
+     *  @var string
+     *
+     * @ORM\Column(type="string")
+     */
+    private $image;
+
+    /**
+     *  @var int
+     *
+     * @ORM\Column(type="integer")
+     */
+    private $lat;
+
+    /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Musee")
      * @ORM\JoinColumn(nullable=false)
      */
@@ -117,6 +131,61 @@ class Bateau
     {
         $this->histoire = $histoire;
     }
+
+    /**
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param string $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLat()
+    {
+        return $this->lat;
+    }
+
+    /**
+     * @param int $lat
+     */
+    public function setLat($lat)
+    {
+        $this->lat = $lat;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLng()
+    {
+        return $this->lng;
+    }
+
+    /**
+     * @param int $lng
+     */
+    public function setLng($lng)
+    {
+        $this->lng = $lng;
+    }
+
+    /**
+     *  @var int
+     *
+     * @ORM\Column(type="integer")
+     */
+    private $lng;
 
     /**
      * @return mixed
