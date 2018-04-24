@@ -27,3 +27,7 @@ AppBundle\Entity\Bateau:
       groups: ['bateau']
     lng:
       groups: ['bateau']
+    musee:
+      groups:
+    temoins:
+      groups: ['bateau']

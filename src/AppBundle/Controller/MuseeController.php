@@ -8,11 +8,12 @@
 
 namespace AppBundle\Controller;
 
+use FOS\RestBundle\Controller\FOSRestController;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use FOS\RestBundle\Controller\Annotations as Rest;
 
-class MuseeController extends Controller
+class MuseeController extends FOSRestController
 {
     /**
      * @Rest\View(serializerGroups={"musee"})

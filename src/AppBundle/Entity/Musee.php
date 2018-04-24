@@ -2,13 +2,14 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Musee
  *
  * @ORM\Table(name="musee")
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\MuseeRepository")
  */
 class Musee
 {

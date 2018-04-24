@@ -2,13 +2,14 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Bateau
  *
  * @ORM\Table(name="bateau", uniqueConstraints={@ORM\UniqueConstraint(name="bateau_unique", columns={"nom"})})
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\BateauRepository")
  */
 class Bateau
 {
