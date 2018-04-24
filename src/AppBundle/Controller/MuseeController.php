@@ -8,34 +8,26 @@
 
 namespace AppBundle\Controller;
 
-use AppBundle\Entity\Musee;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use FOS\RestBundle\Controller\Annotations as Rest;
 
-class MuseeController
+class MuseeController extends Controller
 {
     /**
      * @Rest\View(serializerGroups={"musee"})
      * @Rest\Get("/musee")
      */
-    public function getMuseeAction(Request $request)
+
+    // Fonction qui renvoie toutes les DR
+    public function findMusee()
     {
-        $musee = $this->get('doctrine.orm.entity_manager')
-            ->getRepository('AppBundle:Musee');
+        $musee = $this->getDoctrine()
+            ->getRepository('AppBundle:Musee')
+            ->findAll();
 
         return $musee;
     }
 
-    /**
-     * @Rest\View(serializerGroups={"musee"})
-     * @Rest\Get("/musee/id/bateau")
-     */
-    public function getMusee(Request $request)
-    {
-        $musee = $this->get('doctrine.orm.entity_manager')
-            ->getRepository('AppBundle:Musee');
 
-        return $musee;
-    }
 }

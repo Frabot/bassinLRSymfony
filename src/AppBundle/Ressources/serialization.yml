@@ -1,0 +1,29 @@
+AppBundle\Entity\Musee:
+  attributes:
+    id:
+      groups: ['musee']
+    nom:
+      groups: ['musee']
+    adresse:
+      groups: ['musee']
+    horaire_ouverture:
+      groups: ['musee']
+    horaire_fermeture:
+      groups: ['musee']
+
+AppBundle\Entity\Bateau:
+  attributes:
+    id:
+      groups: ['bateau']
+    nom:
+      groups: ['bateau']
+    anneecreation:
+      groups: ['bateau']
+    histoire:
+      groups: ['bateau']
+    image:
+      groups: ['bateau']
+    lat:
+      groups: ['bateau']
+    lng:
+      groups: ['bateau']

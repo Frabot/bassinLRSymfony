@@ -3,31 +3,24 @@
 namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use FOS\RestBundle\Controller\Annotations as Rest;
 
 class BateauController extends Controller
 {
     /**
      * @Rest\View(serializerGroups={"bateau"})
-     * @Rest\Get("/bateau")
+     * @Rest\Get("/bateaux")
      */
-    public function getBateaux(Request $request)
+
+    // Fonction qui renvoie toutes les DR
+    public function findAllBateaux()
     {
-        $musee = $this->get('doctrine.orm.entity_manager')
-            ->getRepository('AppBundle:Bateau');
+        $bateaux = $this->getDoctrine()
+            ->getRepository('AppBundle:Bateau')
+            ->findAll();
 
-        return $musee;
-    }
-
-    /**
-     * @Rest\View(serializerGroups={"bateau})
-     * @Rest\Get("/bateau/{id}")
-     */
-    public function getOneBateau(Request $request)
-    {
-        $musee = $this->get('doctrine.orm.entity_manager')
-            ->getRepository('AppBundle:Bateau');
-
-        return $musee;
+        return $bateaux;
     }
 }
