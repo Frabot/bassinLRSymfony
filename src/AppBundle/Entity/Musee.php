@@ -2,7 +2,6 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -51,8 +50,8 @@ class Musee
 
 
     /**
-     * @ORM\OneToMany(targetEntity="Bateau", mappedBy="musee")
-     * @var Bateaux []
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Bateau", mappedBy="musee")
+     * @ORM\JoinColumn(referencedColumnName="id")
      */
     private $bateaux;
 
@@ -137,15 +136,7 @@ class Musee
     }
 
     /**
-     * Musee constructor.
-     */
-    public function __construct()
-    {
-        $this->bateaux = new ArrayCollection();
-    }
-
-    /**
-     * @return Bateaux[]
+     * @return mixed
      */
     public function getBateaux()
     {
@@ -153,11 +144,12 @@ class Musee
     }
 
     /**
-     * @param Bateaux[] $bateaux
+     * @param mixed $bateaux
      */
     public function setBateaux($bateaux)
     {
         $this->bateaux = $bateaux;
     }
+
 
 }

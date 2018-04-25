@@ -37,6 +37,66 @@ class Temoin
     private $prenom;
 
     /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Bateau", inversedBy="temoins")
+     * @ORM\JoinColumn(nullable=false, referencedColumnName="id")
+     */
+    private $bateau;
+
+    /**
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Temoignage", mappedBy="temoin")
+     * @ORM\JoinColumn(referencedColumnName="id")
+     */
+    private $temoignages;
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param string $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+
+    /**
+     * @param string $prenom
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+    }
+
+    /**
      * @return mixed
      */
     public function getBateau()
@@ -53,86 +113,7 @@ class Temoin
     }
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Bateau")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $bateau;
-
-    /**
-     * @ORM\OneToMany(targetEntity="Temoignage", mappedBy="temoin")
-     * @var Temoignages []
-     */
-    private $temoignages;
-
-    /**
-     * Get id.
-     *
-     * @return int
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set nom.
-     *
-     * @param string $nom
-     *
-     * @return Temoin
-     */
-    public function setNom($nom)
-    {
-        $this->nom = $nom;
-
-        return $this;
-    }
-
-    /**
-     * Get nom.
-     *
-     * @return string
-     */
-    public function getNom()
-    {
-        return $this->nom;
-    }
-
-    /**
-     * Set prenom.
-     *
-     * @param string $prenom
-     *
-     * @return Temoin
-     */
-    public function setPrenom($prenom)
-    {
-        $this->prenom = $prenom;
-
-        return $this;
-    }
-
-    /**
-     * Get prenom.
-     *
-     * @return string
-     */
-    public function getPrenom()
-    {
-        return $this->prenom;
-    }
-
-    /**
-     * Temoin constructor.
-     */
-    public function __construct()
-    {
-        $this->temoignages = new ArrayCollection();
-    }
-
-
-    /**
-     * @return Temoignages[]
+     * @return mixed
      */
     public function getTemoignages()
     {
@@ -140,10 +121,11 @@ class Temoin
     }
 
     /**
-     * @param Temoignages[] $temoignages
+     * @param mixed $temoignages
      */
     public function setTemoignages($temoignages)
     {
         $this->temoignages = $temoignages;
     }
+
 }

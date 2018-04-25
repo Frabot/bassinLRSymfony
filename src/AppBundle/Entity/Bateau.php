@@ -58,14 +58,21 @@ class Bateau
     private $lat;
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Musee")
-     * @ORM\JoinColumn(nullable=false)
+     *  @var int
+     *
+     * @ORM\Column(type="integer")
+     */
+    private $lng;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Musee", inversedBy="bateaux")
+     * @ORM\JoinColumn(nullable=false, referencedColumnName="id")
      */
     private $musee;
 
     /**
-     * @ORM\OneToMany(targetEntity="Temoin", mappedBy="bateau")
-     * @var Temoins []
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Temoin", mappedBy="bateau")
+     * @ORM\JoinColumn(referencedColumnName="id")
      */
     private $temoins;
 
@@ -182,13 +189,6 @@ class Bateau
     }
 
     /**
-     *  @var int
-     *
-     * @ORM\Column(type="integer")
-     */
-    private $lng;
-
-    /**
      * @return mixed
      */
     public function getMusee()
@@ -205,16 +205,7 @@ class Bateau
     }
 
     /**
-     * Bateau constructor.
-     */
-    public function __construct()
-    {
-        $this->temoins = new ArrayCollection();
-    }
-
-
-    /**
-     * @return Temoins[]
+     * @return mixed
      */
     public function getTemoins()
     {
@@ -222,11 +213,13 @@ class Bateau
     }
 
     /**
-     * @param Temoins[] $temoins
+     * @param mixed $temoins
      */
     public function setTemoins($temoins)
     {
         $this->temoins = $temoins;
     }
+
+
 }
 

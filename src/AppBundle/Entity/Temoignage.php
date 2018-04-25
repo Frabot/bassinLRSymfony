@@ -48,8 +48,8 @@ class Temoignage
     private $commentaire;
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Temoin")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Temoin", inversedBy="temoignages")
+     * @ORM\JoinColumn(nullable=false, referencedColumnName="id")
      */
     private $temoin;
 
@@ -88,6 +88,22 @@ class Temoignage
     /**
      * @return string
      */
+    public function getPhotoTemoignage()
+    {
+        return $this->photo_temoignage;
+    }
+
+    /**
+     * @param string $photo_temoignage
+     */
+    public function setPhotoTemoignage($photo_temoignage)
+    {
+        $this->photo_temoignage = $photo_temoignage;
+    }
+
+    /**
+     * @return string
+     */
     public function getCommentaire()
     {
         return $this->commentaire;
@@ -100,8 +116,6 @@ class Temoignage
     {
         $this->commentaire = $commentaire;
     }
-
-
 
     /**
      * @return mixed
@@ -118,21 +132,4 @@ class Temoignage
     {
         $this->temoin = $temoin;
     }
-
-    /**
-     * @return string
-     */
-    public function getPhotoTemoignage()
-    {
-        return $this->photo_temoignage;
-    }
-
-    /**
-     * @param string $photo_temoignage
-     */
-    public function setPhotoTemoignage($photo_temoignage)
-    {
-        $this->photo_temoignage = $photo_temoignage;
-    }
-
 }
