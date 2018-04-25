@@ -49,7 +49,7 @@ class Temoignage
 
     /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Temoin", inversedBy="temoignages")
-     * @ORM\JoinColumn(nullable=false, referencedColumnName="id")
+     * @ORM\JoinColumn(referencedColumnName="id")
      */
     private $temoin;
 

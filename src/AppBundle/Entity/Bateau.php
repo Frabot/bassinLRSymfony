@@ -2,7 +2,6 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -53,20 +52,20 @@ class Bateau
     /**
      *  @var int
      *
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", nullable=false)
      */
     private $lat;
 
     /**
      *  @var int
      *
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", nullable=false)
      */
     private $lng;
 
     /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Musee", inversedBy="bateaux")
-     * @ORM\JoinColumn(nullable=false, referencedColumnName="id")
+     * @ORM\JoinColumn(referencedColumnName="id")
      */
     private $musee;
 

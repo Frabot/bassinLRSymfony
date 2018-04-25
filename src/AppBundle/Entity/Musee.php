@@ -23,28 +23,28 @@ class Musee
     /**
      * @var string
      *
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=false)
      */
     private $nom;
 
     /**
      * @var string
      *
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=false)
      */
     private$adresse;
 
     /**
      * @var integer
      *
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", nullable=false)
      */
     private $horaireOuverture;
 
     /**
      * @var integer
      *
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", nullable=false)
      */
     private $horaireFermeture;
 

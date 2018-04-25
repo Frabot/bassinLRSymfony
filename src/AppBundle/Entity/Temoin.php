@@ -25,20 +25,20 @@ class Temoin
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string")
+     * @ORM\Column(type="string", nullable=false)
      */
     private $nom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="prenom", type="string")
+     * @ORM\Column(type="string", nullable=false)
      */
     private $prenom;
 
     /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Bateau", inversedBy="temoins")
-     * @ORM\JoinColumn(nullable=false, referencedColumnName="id")
+     * @ORM\JoinColumn(referencedColumnName="id")
      */
     private $bateau;
 

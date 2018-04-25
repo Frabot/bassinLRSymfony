@@ -31,3 +31,29 @@ AppBundle\Entity\Bateau:
       groups:
     temoins:
       groups: ['bateau']
+
+AppBundle\Entity\Temoin:
+  attributes:
+    id:
+      groups: ['temoin']
+    nom:
+      groups: ['temoin']
+    prenom:
+      groups: ['temoin']
+    temoignages:
+      groups: ['temoin']
+
+AppBundle\Entity\Temoignage:
+  attributes:
+    id:
+      groups: ['temoignage']
+    nom:
+      groups: ['temoignage']
+    prenom:
+      groups: ['temoignage']
+    commentaire:
+      groups: ['temoignage']
+
+
+
+

@@ -8,30 +8,27 @@
 
 namespace AppBundle\Controller;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use FOS\RestBundle\Controller\Annotations as Rest;
-use FOS\RestBundle\Controller\FOSRestController;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
-use FOS\RestBundle\View\View;
-use AppBundle\Entity\Musee;
 
-class MuseeController extends FOSRestController
+
+class MuseeController extends Controller
 {
     /**
      * @Rest\View(serializerGroups={"musee"})
-     * @Rest\Get("/musee")
+     * @Rest\Get("/musees")
      */
 
     // Fonction qui renvoie toutes les DR
-    public function findMusee()
+    public function findAllMusees()
     {
-        $musee = $this->getDoctrine()
-            ->getRepository('AppBundle:Musee')
+        $musees = $this->getDoctrine()
+            ->getRepository("AppBundle:Musee")
             ->findAll();
 
-        return $musee;
+        return $musees;
     }
 
 
