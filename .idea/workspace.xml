@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b1a12ef-59c9-4066-9da2-047e766228be" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/serialization.yml" />
-      <change beforePath="$PROJECT_DIR$/.idea/bassinLR.iml" afterPath="$PROJECT_DIR$/.idea/bassinLR.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/BateauController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/BateauController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/MuseeController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/MuseeController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Bateau.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Bateau.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Musee.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Musee.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Temoignage.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Temoignage.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Temoin.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Temoin.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Ressources/serialization.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Ressources/validation.yml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/validation.yml" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/serialization.yml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/serialization.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,8 +72,8 @@
       <file leaf-file-name="serialization.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/serialization.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+            <state relative-caret-position="312">
+              <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -408,7 +393,7 @@
       <workItem from="1524573983084" duration="5212000" />
       <workItem from="1524599524054" duration="308000" />
       <workItem from="1524599850651" duration="6039000" />
-      <workItem from="1524640430348" duration="17591000" />
+      <workItem from="1524640430348" duration="17774000" />
     </task>
     <task id="LOCAL-00001" summary="DB for now">
       <created>1522878902001</created>
@@ -487,11 +472,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524642262231</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="DATA ARE APPEARING YAYYYYYY">
+      <created>1524661209228</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1524661209228</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66452000" />
+    <option name="totallyTimeSpent" value="66635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -533,7 +525,8 @@
     <MESSAGE value="Added repository temoignage" />
     <MESSAGE value="Commit Temoins and fix on imports" />
     <MESSAGE value="Trying to fix the empty brackets in postman" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix the empty brackets in postman" />
+    <MESSAGE value="DATA ARE APPEARING YAYYYYYY" />
+    <option name="LAST_COMMIT_MESSAGE" value="DATA ARE APPEARING YAYYYYYY" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -926,8 +919,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/serialization.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+        <state relative-caret-position="312">
+          <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
           <folding />
         </state>
       </provider>

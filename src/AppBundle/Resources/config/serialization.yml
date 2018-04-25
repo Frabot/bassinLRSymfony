@@ -35,24 +35,24 @@ AppBundle\Entity\Bateau:
 AppBundle\Entity\Temoin:
   attributes:
     id:
-      groups: ['temoin']
+      groups: ['temoin','bateau']
     nom:
-      groups: ['temoin']
+      groups: ['temoin','bateau']
     prenom:
-      groups: ['temoin']
+      groups: ['temoin','bateau']
     temoignages:
       groups: ['temoin']
 
 AppBundle\Entity\Temoignage:
   attributes:
     id:
-      groups: ['temoignage']
-    nom:
-      groups: ['temoignage']
-    prenom:
-      groups: ['temoignage']
+      groups: ['temoignage','temoin']
+    titre:
+      groups: ['temoignage','temoin']
+    photo_temoignage:
+      groups: ['temoignage','temoin']
     commentaire:
-      groups: ['temoignage']
+      groups: ['temoignage','temoin']
 
 
 
