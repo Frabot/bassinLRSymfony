@@ -16,20 +16,20 @@ use Symfony\Component\HttpFoundation\Request;
 
 class MuseeController extends Controller
 {
+    // Fonction qui renvoie les info du musee
     /**
      * @Rest\View(serializerGroups={"musee"})
-     * @Rest\Get("/musees")
+     * @Rest\Get("/musee/{id}")
      */
 
-    // Fonction qui renvoie toutes les DR
-    public function findAllMusees()
+    // Fonction qui renvoie toutes les info du musee
+    public function findInfoMusee(Request $request)
     {
-        $musees = $this->getDoctrine()
+        $musee = $this->getDoctrine()
             ->getRepository("AppBundle:Musee")
-            ->findAll();
+            ->find($request->get('id'));
 
-        return $musees;
+        return $musee;
     }
-
 
 }

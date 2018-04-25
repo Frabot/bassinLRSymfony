@@ -32,7 +32,7 @@ class BateauController extends Controller
     public function findOneBateau(Request $request)
     {
         $bateau = $this->getDoctrine()
-            ->getRepository('QueSaisJeBundle:Bateau')
+            ->getRepository('AppBundle:Bateau')
             ->find($request->get('id'));
 
         return $bateau;

@@ -18,14 +18,14 @@ class TemoinController extends Controller
      * @Rest\Get("/temoins")
      */
 
-    // Fonction qui renvoie toutes les bateaux
+    // Fonction qui renvoie tous les temoins
     public function findAllTemoins()
     {
-        $bateaux = $this->getDoctrine()->getRepository('AppBundle:Temoin')->findAll();
-        if ($bateaux === null) {
-            return new View("there are no users exist", Response::HTTP_NOT_FOUND);
-        }
-        return $bateaux;
+        $temoins = $this->getDoctrine()
+            ->getRepository('AppBundle:Temoin')
+            ->findAll();
+
+        return $temoins;
     }
 
     /**
@@ -33,11 +33,11 @@ class TemoinController extends Controller
      * @Rest\Get("/temoin/{id}")
      */
 
-    // Info bateau
+    // Info temoin
     public function findOneTemoin(Request $request)
     {
         $temoin = $this->getDoctrine()
-            ->getRepository('QueSaisJeBundle:Temoin')
+            ->getRepository('AppBundle:Temoin')
             ->find($request->get('id'));
 
         return $temoin;
