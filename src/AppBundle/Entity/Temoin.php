@@ -37,6 +37,13 @@ class Temoin
     private $prenom;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(type="string", nullable=false)
+     */
+    private $profession;
+
+    /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Bateau", inversedBy="temoins")
      * @ORM\JoinColumn(referencedColumnName="id")
      */
@@ -94,6 +101,22 @@ class Temoin
     public function setPrenom($prenom)
     {
         $this->prenom = $prenom;
+    }
+
+    /**
+     * @return string
+     */
+    public function getProfession()
+    {
+        return $this->profession;
+    }
+
+    /**
+     * @param string $profession
+     */
+    public function setProfession($profession)
+    {
+        $this->profession = $profession;
     }
 
     /**

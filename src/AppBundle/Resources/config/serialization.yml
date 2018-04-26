@@ -1,36 +1,19 @@
-AppBundle\Entity\Musee:
-  attributes:
-    id:
-      groups: ['musee']
-    nom:
-      groups: ['musee']
-    adresse:
-      groups: ['musee']
-    horaire_ouverture:
-      groups: ['musee']
-    horaire_fermeture:
-      groups: ['musee']
-    bateaux:
-      groups: ['musee']
-
 AppBundle\Entity\Bateau:
   attributes:
     id:
-      groups: ['bateau','musee']
+      groups: ['bateau']
     nom:
-      groups: ['bateau','musee']
+      groups: ['bateau']
     anneecreation:
-      groups: ['bateau','musee']
+      groups: ['bateau']
     histoire:
-      groups: ['bateau','musee']
+      groups: ['bateau']
     image:
-      groups: ['bateau','musee']
+      groups: ['bateau']
     lat:
-      groups: ['bateau','musee']
+      groups: ['bateau']
     lng:
-      groups: ['bateau','musee']
-    musee:
-      groups:
+      groups: ['bateau']
     temoins:
       groups: ['bateau']
 
@@ -41,6 +24,8 @@ AppBundle\Entity\Temoin:
     nom:
       groups: ['temoin','bateau']
     prenom:
+      groups: ['temoin','bateau']
+    profession:
       groups: ['temoin','bateau']
     temoignages:
       groups: ['temoin']

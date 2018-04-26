@@ -17,7 +17,7 @@ class BateauController extends Controller
      */
 
     // Fonction qui renvoie toutes les bateaux
-    public function findAllBateaux()
+    public function getAllBateaux()
     {
         $bateaux = $this->getDoctrine()->getRepository('AppBundle:Bateau')->findAll();
         return $bateaux;

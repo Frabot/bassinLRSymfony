@@ -64,12 +64,6 @@ class Bateau
     private $lng;
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Musee", inversedBy="bateaux")
-     * @ORM\JoinColumn(referencedColumnName="id")
-     */
-    private $musee;
-
-    /**
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Temoin", mappedBy="bateau")
      * @ORM\JoinColumn(referencedColumnName="id")
      */
@@ -185,22 +179,6 @@ class Bateau
     public function setLng($lng)
     {
         $this->lng = $lng;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getMusee()
-    {
-        return $this->musee;
-    }
-
-    /**
-     * @param mixed $musee
-     */
-    public function setMusee($musee)
-    {
-        $this->musee = $musee;
     }
 
     /**
