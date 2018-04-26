@@ -44,6 +44,13 @@ class Temoin
     private $profession;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(type="string", nullable=false)
+     */
+    private $photo_temoin;
+
+    /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Bateau", inversedBy="temoins")
      * @ORM\JoinColumn(referencedColumnName="id")
      */
@@ -117,6 +124,22 @@ class Temoin
     public function setProfession($profession)
     {
         $this->profession = $profession;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPhotoTemoin()
+    {
+        return $this->photo_temoin;
+    }
+
+    /**
+     * @param string $photo_temoin
+     */
+    public function setPhotoTemoin($photo_temoin)
+    {
+        $this->photo_temoin = $photo_temoin;
     }
 
     /**

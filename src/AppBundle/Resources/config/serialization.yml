@@ -27,6 +27,8 @@ AppBundle\Entity\Temoin:
       groups: ['temoin','bateau']
     profession:
       groups: ['temoin','bateau']
+    photo_temoin:
+      groups: ['temoin','bateau']
     temoignages:
       groups: ['temoin']
 
