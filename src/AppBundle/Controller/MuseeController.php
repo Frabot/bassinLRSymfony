@@ -23,7 +23,7 @@ class MuseeController extends Controller
      */
 
     // Fonction qui renvoie toutes les info du musee
-    public function findInfoMusee(Request $request)
+    public function getInfoMusee(Request $request)
     {
         $musee = $this->getDoctrine()
             ->getRepository("AppBundle:Musee")

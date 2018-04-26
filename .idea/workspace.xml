@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b1a12ef-59c9-4066-9da2-047e766228be" name="Default" comment="Changes on serialization.yml">
+    <list default="true" id="1b1a12ef-59c9-4066-9da2-047e766228be" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/BateauController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/BateauController.php" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/MuseeController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/MuseeController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/TemoinController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/TemoinController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/serialization.yml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/serialization.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bateau.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Bateau.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Bateau.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3468">
+            <state relative-caret-position="-3972">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
@@ -112,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MuseeController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MuseeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MuseeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="27" column="37" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="228">
+              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
               <folding>
                 <element signature="e#123#180#0#PHP" expanded="true" />
               </folding>
@@ -171,9 +168,9 @@
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/serializer.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/serialization.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/MuseeController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/BateauController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/TemoinController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/MuseeController.php" />
       </list>
     </option>
   </component>
@@ -230,9 +227,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="927" />
-    <option name="height" value="1038" />
+    <option name="x" value="490" />
+    <option name="y" value="15" />
+    <option name="width" value="1400" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -395,7 +393,7 @@
       <workItem from="1524573983084" duration="5212000" />
       <workItem from="1524599524054" duration="308000" />
       <workItem from="1524599850651" duration="6039000" />
-      <workItem from="1524640430348" duration="21288000" />
+      <workItem from="1524640430348" duration="22388000" />
     </task>
     <task id="LOCAL-00001" summary="DB for now">
       <created>1522878902001</created>
@@ -488,11 +486,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524661402616</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Services are working now it's time for the app">
+      <created>1524668579961</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1524668579961</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70149000" />
+    <option name="totallyTimeSpent" value="71249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -536,7 +541,8 @@
     <MESSAGE value="Trying to fix the empty brackets in postman" />
     <MESSAGE value="DATA ARE APPEARING YAYYYYYY" />
     <MESSAGE value="Changes on serialization.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes on serialization.yml" />
+    <MESSAGE value="Services are working now it's time for the app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Services are working now it's time for the app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -907,16 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MuseeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="27" column="37" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#123#180#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TemoinController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -927,9 +923,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Bateau.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3468">
+        <state relative-caret-position="-3972">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MuseeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding>
+            <element signature="e#123#180#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
