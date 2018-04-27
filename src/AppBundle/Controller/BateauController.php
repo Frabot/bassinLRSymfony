@@ -16,7 +16,7 @@ class BateauController extends Controller
      * @Rest\Get("/bateaux")
      */
 
-    // Fonction qui renvoie toutes les bateaux
+    // Fonction qui renvoie tous les bateaux
     public function getAllBateaux()
     {
         $bateaux = $this->getDoctrine()->getRepository('AppBundle:Bateau')->findAll();
@@ -37,4 +37,5 @@ class BateauController extends Controller
 
         return $bateau;
     }
+
 }

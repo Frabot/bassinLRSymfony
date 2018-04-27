@@ -4,8 +4,6 @@
     <list default="true" id="1b1a12ef-59c9-4066-9da2-047e766228be" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/BateauController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/BateauController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/TemoinController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/TemoinController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/serialization.yml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/serialization.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TemoinController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TemoinController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TemoinController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
+            <state relative-caret-position="529">
               <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
@@ -91,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BateauController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BateauController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BateauController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
+            <state relative-caret-position="508">
               <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="e#41#98#0#PHP" expanded="true" />
@@ -158,11 +156,11 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/MuseeController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Bateau.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Temoin.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/BateauController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/TemoignageRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/BateauRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/serialization.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/TemoinController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/BateauController.php" />
       </list>
     </option>
   </component>
@@ -388,7 +386,7 @@
       <workItem from="1524640430348" duration="23697000" />
       <workItem from="1524737517774" duration="7870000" />
       <workItem from="1524783375736" duration="4052000" />
-      <workItem from="1524797315139" duration="544000" />
+      <workItem from="1524797315139" duration="669000" />
     </task>
     <task id="LOCAL-00001" summary="DB for now">
       <created>1522878902001</created>
@@ -516,11 +514,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524783541364</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Gave bateau access to temoignage">
+      <created>1524797898356</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1524797898356</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85024000" />
+    <option name="totallyTimeSpent" value="85149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -901,21 +906,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TemoinController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BateauController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="508">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#41#98#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TemoinController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
