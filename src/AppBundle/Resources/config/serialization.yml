@@ -30,16 +30,16 @@ AppBundle\Entity\Temoin:
     photo_temoin:
       groups: ['temoin','bateau']
     temoignages:
-      groups: ['temoin']
+      groups: ['temoin','bateau']
 
 AppBundle\Entity\Temoignage:
   attributes:
     id:
-      groups: ['temoin','bateau']
+      groups: ['temoin','bateau','temoignage']
     titre:
       groups: ['temoin','bateau']
     photo_temoignage:
-      groups: ['temoin','bateau']
+      groups: ['temoin','bateau','temoignage']
     commentaire:
       groups: ['temoin','bateau']
 

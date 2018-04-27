@@ -42,4 +42,20 @@ class TemoinController extends Controller
 
         return $temoin;
     }
+
+
+    /**
+     * @Rest\View(serializerGroups={"temoignage"})
+     * @Rest\Get("/temoignages")
+     */
+
+    // Service pour trouver toutes les images
+    public function getAllTemoignages(Request $request)
+    {
+        $temoignage = $this->getDoctrine()
+            ->getRepository('AppBundle:Temoignage')
+            ->findAll();
+
+        return $temoignage;
+    }
 }
